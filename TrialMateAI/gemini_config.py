@@ -2,8 +2,10 @@
 gemini_config.py
 Configuration file for TrialMate AI
 """
-
 import os
+import streamlit as st
 
-# Read Gemini API key from environment variable
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "PASTE_YOUR_API_KEY_HERE")
+if "GEMINI_API_KEY" in st.secrets:
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+else:
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
