@@ -1,4 +1,2 @@
-The important software tools required to build AI powered TrialMateAI CRC Co-pilot:-
-
-1. streamlit           = Frontend 
-2. google-generativeai = Backend powered with Gemini Models 
+streamlit
+google-generativeai
